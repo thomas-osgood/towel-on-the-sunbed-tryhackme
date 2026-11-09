@@ -337,7 +337,7 @@ func (e *Exploiter) Attack() (err error) {
 	*/
 	reward, err = e.vault()
 	if err != nil {
-		return nil
+		return err
 	}
 
 	log.Printf("Flag: %s\n", reward.Flag)
